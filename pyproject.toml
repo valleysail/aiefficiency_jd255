@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valleysail-aiefficiency_jd255"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对AI 工程效率工具工程师·多租户的显存隔离相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "valleysail" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://valleysail.github.io"
+Repository = "https://github.com/valleysail/aiefficiency_jd255"
+Issues = "https://github.com/valleysail/aiefficiency_jd255/issues"
+
+[project.scripts]
+aiefficiency_jd255 = "aiefficiency_jd255:main"
+
+[tool.setuptools]
+py-modules = ["aiefficiency_jd255"]
